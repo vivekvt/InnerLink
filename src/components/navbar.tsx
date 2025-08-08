@@ -26,7 +26,7 @@ export default function Navbar() {
   const { data: session, isPending } = useSession();
 
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 border-border/40 w-full">
+    <header className="w-full">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-8">
