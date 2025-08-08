@@ -16,7 +16,6 @@ import {
   User,
   LogOut,
   Shield,
-  ChevronDown,
   Brain,
   HeadphonesIcon,
 } from "lucide-react";
@@ -31,7 +30,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-8">
-            <Link href="/" className="group flex items-center space-x-3">
+            <Link href="/" className="group flex items-center space-x-1">
+              <Brain className="h-6 w-6" />
               <span className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-xl font-bold text-transparent dark:from-white dark:to-gray-300">
                 {appConfig.name}
               </span>
