@@ -1,5 +1,6 @@
 export const appConfig = {
-  name: "Nextjs Starter",
+  name: "InnerLink",
+  tagline: "AI-Powered Therapy and Meditation",
   description:
-    "Starter for Nextjs 15 with Better Auth, Drizzle, Shadcn, Tailwind CSS, and more.",
+    "Innerlink is an AI-powered therapy and meditation app that provides a supportive, lifelike avatar to guide you on your journey to mental wellness. Experience personalized care and real-time support, whenever you need it",
 };

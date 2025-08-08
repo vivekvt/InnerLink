@@ -8,17 +8,18 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { signOut, useSession } from "@/lib/auth/client";
 import { Button } from "@/components/ui/button";
-import { Menu, User, LogOut, Shield, ChevronDown } from "lucide-react";
+import {
+  Menu,
+  User,
+  LogOut,
+  Shield,
+  ChevronDown,
+  Brain,
+  HeadphonesIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { appConfig } from "@/lib/appConfig";
 
@@ -86,6 +87,22 @@ export default function Navbar() {
                     <span>Dashboard</span>
                   </Link>
                 </DropdownMenuItem>
+
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <Link href="/therapy" className="flex items-center">
+                    <Brain className="mr-3 h-4 w-4" />
+                    <span>Therapy Session</span>
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <Link href="/meditation" className="flex items-center">
+                    <HeadphonesIcon className="mr-3 h-4 w-4" />
+                    <span>Meditation</span>
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild className="cursor-pointer">
                   <Link href="/profile" className="flex items-center">
