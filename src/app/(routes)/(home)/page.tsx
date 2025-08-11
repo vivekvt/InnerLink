@@ -2,52 +2,16 @@ import { appConfig } from "@/lib/appConfig";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-
-// Corrected mentors array with proper image paths
-const mentors = [
-  {
-    id: "Elenora_IT_Sitting_public",
-    image: "/ai/Elenora_IT_Sitting_public.webp",
-    name: "Elenora",
-    specialty: "Cognitive Behavioral Therapy",
-  },
-  {
-    id: "Judy_Teacher_Sitting_public",
-    image: "/ai/Judy_Teacher_Sitting_public.webp",
-    name: "Judy",
-    specialty: "Mindfulness & Meditation",
-  },
-  {
-    id: "June_HR_public",
-    image: "/ai/June_HR_public.webp",
-    name: "June",
-    specialty: "Workplace Wellness",
-  },
-  {
-    id: "SilasHR_public",
-    image: "/ai/SilasHR_public.webp",
-    name: "Silas",
-    specialty: "Anxiety & Stress Management",
-  },
-  {
-    id: "Bryan_IT_Sitting_public",
-    image: "/ai/Bryan_IT_Sitting_public.webp",
-    name: "Bryan",
-    specialty: "Tech Professional Support",
-  },
-  {
-    id: "Wayne_20240711",
-    image: "/ai/Wayne_20240711.webp",
-    name: "Wayne",
-    specialty: "Life Coaching & Goals",
-  },
-];
+import { avatars } from "@/components/logic/avatars";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      {/* <Navbar /> */}
       {/* Hero Section */}
-      <section className="relative px-4 py-20">
+      {/* <section className="relative px-4 py-20">
         <div className="absolute inset-0 bg-white/50 dark:bg-black/20"></div>
         <div className="relative mx-auto max-w-7xl text-center">
           <div className="mb-8">
@@ -72,8 +36,8 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
-
+      </section> */}
+      <Hero />
       {/* AI Therapists Section */}
       <section className="bg-white px-4 py-20 dark:bg-gray-900">
         <div className="mx-auto max-w-7xl">
@@ -88,15 +52,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {mentors.map((mentor) => (
+            {avatars.map((avatar) => (
               <div
-                key={mentor.id}
+                key={avatar.id}
                 className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:border-gray-700 dark:bg-gray-800"
               >
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src={mentor.image}
-                    alt={mentor.name}
+                    src={avatar.image}
+                    alt={avatar.name}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -104,10 +68,10 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
-                    {mentor.name}
+                    {avatar.name}
                   </h3>
                   <p className="mb-3 font-medium text-blue-600 dark:text-blue-400">
-                    {mentor.specialty}
+                    {avatar.specialty}
                   </p>
                 </div>
               </div>

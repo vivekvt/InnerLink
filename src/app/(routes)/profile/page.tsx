@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import ProfileForm from "./profile-form";
 import ProfileGuard from "@/components/profile-guard";
 import { UserIcon } from "lucide-react";
+import Navbar from "@/components/navbar";
 
 export default async function ProfilePage() {
   const user = await getMe();
@@ -13,6 +14,7 @@ export default async function ProfilePage() {
 
   return (
     <ProfileGuard>
+      <Navbar />
       <div className="container mx-auto min-h-[calc(100vh-64px)] max-w-2xl px-4 py-8">
         <div className="space-y-6">
           <div className="text-center">

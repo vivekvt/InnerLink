@@ -42,13 +42,13 @@ export default function ProfileForm({ initialName }: ProfileFormProps) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <Label htmlFor="name">Full Name</Label>
+        <Label htmlFor="name">Name</Label>
         <Input
           id="name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Enter your full name"
+          placeholder="Enter your name"
           disabled={isPending}
           className="mt-1"
           maxLength={100}

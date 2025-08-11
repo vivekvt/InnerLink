@@ -7,7 +7,6 @@ import {
   DEFAULT_LOGIN_REDIRECT,
   publicRoutes,
   profileCompletionRoutes,
-  PROFILE_COMPLETION_REDIRECT,
 } from "./routes";
 
 export async function middleware(request: NextRequest) {
