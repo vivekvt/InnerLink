@@ -38,7 +38,7 @@ export default function LoadingSkeleton() {
     return () => clearInterval(interval);
   }, []);
 
-  const CurrentIcon = steps[currentStep]?.icon || Brain;
+
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-white p-4">

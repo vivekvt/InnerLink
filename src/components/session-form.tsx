@@ -107,7 +107,7 @@ export default function SessionForm({
                 Ready for your {sessionType} session, {userName}?
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                Choose your guide and let us know how you're feeling
+                                  Choose your guide and let us know how you&apos;re feeling
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function SessionForm({
               {/* Focus Area */}
               <div>
                 <Label className="mb-3 block text-base font-medium">
-                  What's your focus today?
+                  What&apos;s your focus today?
                 </Label>
                 <RadioGroup
                   value={sessionFocus}
@@ -212,7 +212,7 @@ export default function SessionForm({
               {/* Additional Details */}
               <div>
                 <Label className="mb-3 block text-base font-medium">
-                  Anything else you'd like to share? (Optional)
+                  Anything else you&apos;d like to share? (Optional)
                 </Label>
                 <Textarea
                   value={additionalDetails}

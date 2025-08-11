@@ -1,9 +1,7 @@
-import { appConfig } from "@/lib/appConfig";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { avatars } from "@/components/logic/avatars";
-import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 
 export default function Home() {

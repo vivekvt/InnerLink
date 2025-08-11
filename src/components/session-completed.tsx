@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   CheckCircle,
-  Clock,
-  Calendar,
-  Heart,
   ArrowRight,
   Home,
   BookOpen,
@@ -21,12 +18,7 @@ export default function SessionCompleted() {
     return () => clearTimeout(contentTimer);
   }, []);
 
-  const sessionData = {
-    duration: "45 minutes",
-    type: "Anxiety Management",
-    therapist: "Dr. Sarah Chen",
-    date: "Today, 2:30 PM",
-  };
+
 
   return (
     <div className="flex min-h-screen flex-1 items-center justify-center bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-4">
@@ -91,8 +83,8 @@ export default function SessionCompleted() {
           className={`py-8 text-center transition-all delay-1100 duration-700 ${showContent ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
         >
           <p className="text-gray-500 italic">
-            "Every session is a step forward in your journey to better mental
-            health."
+            &ldquo;Every session is a step forward in your journey to better mental
+            health.&rdquo;
           </p>
         </div>
       </div>

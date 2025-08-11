@@ -10,7 +10,7 @@ export const auth = betterAuth({
   }),
   plugins: [
     emailOTP({
-      async sendVerificationOTP({ email, otp, type }) {
+      async sendVerificationOTP({ email, otp }) {
         try {
           await resend.emails.send({
             from: senderEmail!,

@@ -37,8 +37,8 @@ export default async function DashboardPage() {
               Hello, {user.name}!
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-              Ready to connect with your inner self? Choose how you'd like to
-              start your session today.
+              Ready to connect with your inner self? Choose how you&apos;d like
+              to start your session today.
             </p>
           </div>
 
